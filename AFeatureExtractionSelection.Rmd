@@ -783,13 +783,13 @@ ica <- icaimax(t(df2),10,alg="gradient",
                fun="exp",tol=1.0e-4)
 ica <- icajade(t(df2),10,tol=1.0e-4)
 ica$S[,1] <- -1*ica$S[,1]
-ica$S[,2] <- -1*ica$S[,2]
-ica$S[,3] <- -1*ica$S[,3]
-ica$S[,4] <- -1*ica$S[,4]
-ica$S[,5] <- -1*ica$S[,5]
-ica$S[,6] <- -1*ica$S[,6]
-ica$S[,8] <- -1*ica$S[,8]
-#ica$S[,9] <- -1*ica$S[,9]
+#ica$S[,2] <- -1*ica$S[,2]
+#ica$S[,3] <- -1*ica$S[,3]
+#ica$S[,4] <- -1*ica$S[,4]
+#ica$S[,5] <- -1*ica$S[,5]
+#ica$S[,6] <- -1*ica$S[,6]
+#ica$S[,7] <- -1*ica$S[,7]
+ica$S[,9] <- -1*ica$S[,9]
 
 for (j in 1:10){
 plot(wv[1:1000],df2[1,1:1000],ty="l",ylim=c(-7,3),col=alpha("black",0.01))
